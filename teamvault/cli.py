@@ -67,7 +67,7 @@ def plumbing(pargs):
 
 
 def run(pargs):
-    cmd = "gunicorn --preload teamvault.wsgi:application"
+    cmd = "gunicorn -t 180 --preload teamvault.wsgi:application"
     if pargs.bind:
         cmd += ' -b ' + pargs.bind
 
