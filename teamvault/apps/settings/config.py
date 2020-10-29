@@ -136,6 +136,10 @@ def configure_logging(config):
                 'handlers': ['console'],
                 'level': level,
             },
+            "django_auth_ldap": {
+                "level": level,
+                "handlers": ["console"],
+            },
         },
     }
 
